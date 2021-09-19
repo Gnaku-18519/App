@@ -1,4 +1,8 @@
 Architecture:
-Front-End --------------- Back-End
-User Interface (UI)       Data and Processing
+Front-End -------------------------- Back-End
+User Interface (UI)                  Data and Processing
 👆 (HTML, CSS, Angular, TypeScript)
+
+API (Application Programming Interface)
+HTTP Services / APIs: Endpoints that are accessible via the HTTP protocol
+Front-End ---HTTP---> Back-End (this process is to use HTTP requests to get or save the data)
