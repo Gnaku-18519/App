@@ -8,3 +8,5 @@ Preparation Process:
 >cd hello-world
 >code .
 >ng serve
+
+Browser does not refresh after code changes: npm install --save @ngtools/webpack@1.2.4
