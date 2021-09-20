@@ -11,3 +11,5 @@ Preparation Process:
 
 Browser does not refresh after code changes: >npm install --save @ngtools/webpack@1.2.4
 Browser does not automatically open after "ng serve" (should open http://localhost:4200/): >ng serve --open
+
+Use "ctrl + backtick" (backtick is the one before "1!") to open a command window within VSCode
