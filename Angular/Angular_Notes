@@ -9,4 +9,5 @@ Preparation Process:
 >code .
 >ng serve
 
-Browser does not refresh after code changes: npm install --save @ngtools/webpack@1.2.4
+Browser does not refresh after code changes: >npm install --save @ngtools/webpack@1.2.4
+Browser does not automatically open after "ng serve" (should open http://localhost:4200/): >ng serve --open
