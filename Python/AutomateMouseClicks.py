@@ -33,3 +33,13 @@ pyautogui.hotkey('ctrl', 'c') #press the Ctrl-C hotkey combination
 
 #Alert Box
 pyautogui.alert('This is the message to display.') #make an alert box appear and pause the program until OK is clicked
+
+#Drag the mouse in a square spiral shape in MS Paint (or any graphics drawing program)
+distance = 200
+while distance > 0:
+    pyautogui.drag(distance, 0, duration=0.5) #move right
+    distance -= 5
+    pyautogui.drag(0, distance, duration=0.5) #move down
+    pyautogui.drag(-distance, 0, duration=0.5) #move left
+    distance -= 5
+    pyautogui.drag(0, -distance, duration=0.5) #move up
