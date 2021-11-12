@@ -1,3 +1,5 @@
+All HTML documents must start with a document type declaration: <!DOCTYPE html>
+
 Run .html from a terminal:
     1. External Browser
         browsername <filename>
