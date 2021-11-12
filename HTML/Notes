@@ -1,4 +1,32 @@
+HTML is NOT Case Sensitive
 All HTML documents must start with a document type declaration: <!DOCTYPE html>
+Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+
+Beginning:
+    <html lang="en"></html>
+        Always include the lang attribute inside the <html> tag, to declare the language of the Web page.
+
+Title:
+    <p title="I'm a tooltip">This is a paragraph.</p>
+        The title attribute defines some extra information about an element.
+
+Headings (<h1> to <h6>):
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    
+Paragraphs:
+    <p style="color:red;">This is a red paragraph.</p>
+        The style attribute is used to add styles to an element, such as color, font, size, and more.
+
+Links:
+    <a href="https://www.ajwuu.com">Name of the link shown in text</a>
+        The href attribute of <a> specifies the URL of the page the link goes to.
+
+Images:
+    <img src="ajwuu.jpg" alt="this is an alternative text" width="104" height="142">
+        The required alt attribute specifies an alternate text for an image, if the image for some reason cannot be displayed.
+        This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.
 
 Run .html from a terminal:
     1. External Browser
