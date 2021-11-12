@@ -1,0 +1,7 @@
+Run .html from a terminal:
+    1. External Browser
+        browsername <filename>
+        Eg. google-chrome index.html
+            firefox index.html
+    2.  Lynx Terminal-Based Web Browser ($sudo apt-get install lynx)
+        lynx <filename>
