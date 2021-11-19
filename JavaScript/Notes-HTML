@@ -1,0 +1,66 @@
+<!-- This is a comment -->
+
+HTML is NOT Case Sensitive
+All HTML documents must start with a document type declaration: <!DOCTYPE html>
+Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+
+Beginning:
+    <html lang="en"></html>
+        Always include the lang attribute inside the <html> tag, to declare the language of the Web page.
+
+Title:
+    <p title="I'm a tooltip">This is a paragraph.</p>
+        The title attribute defines some extra information about an element.
+
+Headings (<h1> to <h6>):
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h1 style="font-size:60px;">Heading 1</h1>
+        Even bigger headers ↑
+    
+Paragraphs:
+    <p style="color:red;">This is a red paragraph.</p>
+        The style attribute is used to add styles to an element, such as color, font, size, and more.
+    <hr> <- Defines a thematic change in the content
+    <br> <- Inserts a single line break
+    <pre> <- Defines pre-formatted text
+
+Links:
+    <a href="https://www.ajwuu.com">Name of the link shown in text</a>
+        The href attribute of <a> specifies the URL of the page the link goes to.
+
+Images:
+    <img src="ajwuu.jpg" alt="this is an alternative text" width="104" height="142">
+        The required alt attribute specifies an alternate text for an image, if the image for some reason cannot be displayed.
+        This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.
+
+Run .html from a terminal:
+    1. External Browser
+        browsername <filename>
+        Eg. google-chrome index.html
+            firefox index.html
+    2.  Lynx Terminal-Based Web Browser ($sudo apt-get install lynx)
+        lynx <filename>
+
+Formats:
+    <b> - Bold
+    <strong> - Important
+    <i> - Italic
+    <em> - Emphasized
+    <mark> - Marked
+    <small> - Smaller
+    <del> - Deleted
+    <ins> - Inserted
+    <sub> - Subscript
+    <sup> - Superscript
+
+Quotations:
+    <blockquote cite="http://source.com">Our quotes here, can be written in paragraphs</blockquote>
+    <p>Short quotes are like: <q>THIS</q></p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <address>User Address in Blocks</address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+        BDO stands for Bi-Directional Override.
+        The HTML <bdo> tag is used to override the current text direction.
