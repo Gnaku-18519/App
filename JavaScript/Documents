@@ -1,1 +1,5 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
+The body tag's onload callback attribute specifies that 
+    the provided randomizeButtonPositions method should be called right after the body of your html page has finished loading.
+    This allows the position of your Dessert button to be randomized each time the page is refreshed and reloaded.
