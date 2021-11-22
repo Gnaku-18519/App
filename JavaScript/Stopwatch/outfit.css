@@ -1,0 +1,45 @@
+body {
+  background-color: cornflowerblue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+button {
+  color: cornsilk;
+  background-color: darkblue;
+  border-color: darkblue;
+  border-width: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 44px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+button:hover {
+  color: gold;
+}
+
+/* .x will select element of class="x" */
+/* #y will select element of id="y" */
+.menubutton {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
