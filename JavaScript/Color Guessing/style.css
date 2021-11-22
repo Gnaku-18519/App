@@ -24,6 +24,7 @@ h1 {
 #stripe {
   background: white;
   height: 30px;
+  font-weight: bold;
   text-align: center;
   color: black;
 }
@@ -31,9 +32,11 @@ h1 {
 #message {
   text-transform: uppercase;
   color: cornflowerblue;
-  font-size: 1.5em;
+  font-size: 20px;
+  font-weight: 500;
   display: inline-block;
   width: 20%;
+  /* 20% width of the borders */
 }
 
 #container {
@@ -44,14 +47,10 @@ h1 {
 
 .square {
   width: 30%;
-  background-color: purple;
   padding-bottom: 30%;
-  float: left;
+  float: left; /* element floats on the left side of the container */
   margin: 1.66%;
-  transition: background 0.5s;
-  -webkit-transition: background 0.5s;
-  -moz-transition: background 0.5s;
-  -o-transition: background 0.5s;
+  transition: background 0.5s; /* transition effect: target CSS property, duration of the effect */
 }
 
 button {
@@ -59,14 +58,11 @@ button {
   color: cornflowerblue;
   font-family: "Raleway", Sans-serif;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 20px;
   background-color: white;
   height: 100%;
   letter-spacing: 1px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  transition: all 0.3s; /* "all" resets all of an element's properties except unicode-bidi, direction, and CSS Custom Properties. */
 }
 
 button:hover {
@@ -75,6 +71,7 @@ button:hover {
 }
 
 .selected {
+  /* id contains key-word "selected" */
   background-color: cornflowerblue;
   color: white;
 }
@@ -84,5 +81,6 @@ button:hover {
 }
 
 * {
-  border: 0px solid red;
+  /* select all elements */
+  border: 0px;
 }
