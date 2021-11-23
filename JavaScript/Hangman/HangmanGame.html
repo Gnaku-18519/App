@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="AJWuu">
+        <title>Hangman Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>Hangman Game</h1>
+        <h2 id="rule">Guess the word from the alphabet below, or click hint to get a clue.</h2>
+        <h2>The chosen category is: <span id="question"></span></h2>
+
+        <div id="alphabet">
+            <div class="char">a</div>
+            <div class="char">b</div>
+            <div class="char">c</div>
+            <div class="char">d</div>
+            <div class="char">e</div>
+            <div class="char">f</div>
+            <div class="char">g</div>
+            <div class="char">h</div>
+            <div class="char">i</div>
+            <div class="char">j</div>
+            <div class="char">k</div>
+            <div class="char">l</div>
+            <div class="char">m</div>
+            <div class="char">n</div>
+            <div class="char">o</div>
+            <div class="char">p</div>
+            <div class="char">q</div>
+            <div class="char">r</div>
+            <div class="char">s</div>
+            <div class="char">t</div>
+            <div class="char">u</div>
+            <div class="char">v</div>
+            <div class="char">w</div>
+            <div class="char">x</div>
+            <div class="char">y</div>
+            <div class="char">z</div>
+        </div>
+
+        <h2>You have <span id="lives">10</span> lives left</h2>
+        <h2>Clue: <span id="clue"></span></h2>
+        <div id="stripe">
+            <button>Hint</button>
+            <button>Play Again</button>
+        </div>
+        
+        <script src="Hangman.js"></script>
+    </body>
+</html>
