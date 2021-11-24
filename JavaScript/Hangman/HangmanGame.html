@@ -1,52 +1,69 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="AJWuu">
-        <title>Hangman Game</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
 
-    <body>
-        <h1>Hangman Game</h1>
-        <h2 id="rule">Guess the word from the alphabet below, or click hint to get a clue.</h2>
-        <h2>The chosen category is: <span id="question"></span></h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="AJWuu">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-        <div id="alphabet">
-            <div class="char">a</div>
-            <div class="char">b</div>
-            <div class="char">c</div>
-            <div class="char">d</div>
-            <div class="char">e</div>
-            <div class="char">f</div>
-            <div class="char">g</div>
-            <div class="char">h</div>
-            <div class="char">i</div>
-            <div class="char">j</div>
-            <div class="char">k</div>
-            <div class="char">l</div>
-            <div class="char">m</div>
-            <div class="char">n</div>
-            <div class="char">o</div>
-            <div class="char">p</div>
-            <div class="char">q</div>
-            <div class="char">r</div>
-            <div class="char">s</div>
-            <div class="char">t</div>
-            <div class="char">u</div>
-            <div class="char">v</div>
-            <div class="char">w</div>
-            <div class="char">x</div>
-            <div class="char">y</div>
-            <div class="char">z</div>
+<body>
+    <h1>Hangman Game</h1>
+    <h2 id="rule">Guess the word from the alphabet below, or click hint to get a clue.</h2>
+    <h2>The chosen category is: <span id="showCategory"></span></h2>
+
+    <div class="board alphabet">
+        <div id="hold">
         </div>
 
-        <h2>You have <span id="lives">10</span> lives left</h2>
-        <h2>Clue: <span id="clue"></span></h2>
-        <div id="stripe">
-            <button>Hint</button>
-            <button>Play Again</button>
+        <div class="container">
+            <button class="char" id="a" onclick="charClicked(this.id)">a</button>
+            <button class="char" id="b" onclick="charClicked(this.id)">b</button>
+            <button class="char" id="c" onclick="charClicked(this.id)">c</button>
+            <button class="char" id="d" onclick="charClicked(this.id)">d</button>
+            <button class="char" id="e" onclick="charClicked(this.id)">e</button>
+            <button class="char" id="f" onclick="charClicked(this.id)">f</button>
+            <button class="char" id="g" onclick="charClicked(this.id)">g</button>
+            <button class="char" id="h" onclick="charClicked(this.id)">h</button>
+            <button class="char" id="i" onclick="charClicked(this.id)">i</button>
+            <button class="char" id="j" onclick="charClicked(this.id)">j</button>
+            <button class="char" id="k" onclick="charClicked(this.id)">k</button>
+            <button class="char" id="l" onclick="charClicked(this.id)">l</button>
+            <button class="char" id="m" onclick="charClicked(this.id)">m</button>
+            <button class="char" id="n" onclick="charClicked(this.id)">n</button>
+            <button class="char" id="o" onclick="charClicked(this.id)">o</button>
+            <button class="char" id="p" onclick="charClicked(this.id)">p</button>
+            <button class="char" id="q" onclick="charClicked(this.id)">q</button>
+            <button class="char" id="r" onclick="charClicked(this.id)">r</button>
+            <button class="char" id="s" onclick="charClicked(this.id)">s</button>
+            <button class="char" id="t" onclick="charClicked(this.id)">t</button>
+            <button class="char" id="u" onclick="charClicked(this.id)">u</button>
+            <button class="char" id="v" onclick="charClicked(this.id)">v</button>
+            <button class="char" id="w" onclick="charClicked(this.id)">w</button>
+            <button class="char" id="x" onclick="charClicked(this.id)">x</button>
+            <button class="char" id="y" onclick="charClicked(this.id)">y</button>
+            <button class="char" id="z" onclick="charClicked(this.id)">z</button>
         </div>
-        
-        <script src="Hangman.js"></script>
-    </body>
+    </div>
+
+    <div class="board notification">
+        <h2 id="lives"></h2>
+        <div class="wrapper">
+            <div class="card">
+                <div class="hint">
+                    <h2 id="hint">Come Here</h2>
+                    <h2 id="hint">for</h2>
+                    <h2 id="hint">BIG HINT</h2>
+                </div>
+                <div class="clue">
+                    <p id="clue">Here is the clue</p>
+                </div>
+            </div>
+        </div>
+        <button id="playAgain">Play Again</button>
+    </div>
+
+    <script src="Hangman.js"></script>
+</body>
+
 </html>
