@@ -1,8 +1,8 @@
 # Tic Tac Toe  
 Play it here: https://pages.cs.wisc.edu/~aijing/tictactoe/TicTacToeGame.html  
 1. text input box
-2. "/<br/>"
-3. "/<b/>/</b/>"
+2. "< br >"
+3. "< b > < /b >"
 4. onclick="functionA(); functionB();"
 5. document.getElementById().disabled = true;
 6. window.alert()
