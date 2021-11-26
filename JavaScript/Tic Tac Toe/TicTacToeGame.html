@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="AJWuu">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>TIC-TAC-TOE</h1>
+
+    <p id="instruction">Start playing by clicking on box
+        <br>The First Player will be <b>Player X</b>
+        <br>and The Second Player <b>Player O</b>
+    </p>
+
+    <!-- 3*3 grid of Boxes -->
+    <input type="text" class="box" id="b1" onclick="checkTurns(this.id); checkWinning();" readonly>
+    <input type="text" class="box" id="b2" onclick="checkTurns(this.id); checkWinning();" readonly>
+    <input type="text" class="box" id="b3" onclick="checkTurns(this.id); checkWinning();" readonly>
+    <br><br>
+    <input type="text" class="box" id="b4" onclick="checkTurns(this.id); checkWinning();" readonly>
+    <input type="text" class="box" id="b5" onclick="checkTurns(this.id); checkWinning();" readonly>
+    <input type="text" class="box" id="b6" onclick="checkTurns(this.id); checkWinning();" readonly>
+    <br><br>
+    <input type="text" class="box" id="b7" onclick="checkTurns(this.id); checkWinning();" readonly>
+    <input type="text" class="box" id="b8" onclick="checkTurns(this.id); checkWinning();" readonly>
+    <input type="text" class="box" id="b9" onclick="checkTurns(this.id); checkWinning();" readonly>
+
+    <br><br>
+    <button id="reset" onclick="reset()">play again</button>
+
+    <br><br>
+    <p id="print"></p>
+
+    <script src="TicTacToe.js"></script>
+</body>
+
+</html>
