@@ -6,5 +6,5 @@
 3. run() -> how to run the driver function once the page is loaded
 4. squares[i].addEventListener("click", function() {});
 5. this.classList.add("selected"); / modeButtons[i].classList.remove("selected");
-6. * { }
+6. '* { }'
 ### Question: Is it possible to eliminate the "space" between button "EASY" and "HARD"?
