@@ -1,6 +1,6 @@
 # Tic Tac Toe  
 ### Play it here: https://pages.cs.wisc.edu/~aijing/tictactoe/TicTacToeGame.html  
-### New things included in this game:  
+### New things included in this game  
 1. text input box
 2. "< br >"
 3. "< b > < /b >"
