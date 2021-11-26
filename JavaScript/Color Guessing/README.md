@@ -7,4 +7,5 @@
 4. squares[i].addEventListener("click", function() {});
 5. this.classList.add("selected"); / modeButtons[i].classList.remove("selected");
 6. '* { }'
+7. text-transform: uppercase;
 ### Question: Is it possible to eliminate the "space" between button "EASY" and "HARD"?
