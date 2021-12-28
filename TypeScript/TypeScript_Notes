@@ -1,4 +1,0 @@
-TypeScript is a superset of JavaScript (TS supports every JS, and with more functions).
-TypeScript has strong typing, object-oriented features, compile-time errors and great tooling.
-
-TypeScript ---Transpile---> JavaScript (for browser to understand)
