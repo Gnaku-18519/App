@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm install`
 
-Get all dependencies in package.json.\
+Get all dependencies in package.json.
 
 ### `npm test`
 
