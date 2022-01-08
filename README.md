@@ -13,4 +13,4 @@ Front-End contains HTML Templates and Presentation Logic; Back-End contains Data
 | Front-End | Back-End |
 |----------:|:--------:|
 | User Interface (UI) | Data and Processing |
-| 👆 (HTML, CSS, Angular, TypeScript) |  |
+| (HTML, CSS, Angular, TypeScript)👆  |  |
