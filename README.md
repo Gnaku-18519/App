@@ -1,5 +1,5 @@
 # App
-Happy FrontEnd Learning!  
+Happy Frontend Learning!  
    
 ## Languages
 Angular is a framework.  
