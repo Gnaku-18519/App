@@ -1,5 +1,7 @@
 # JavaScript
 ### debug: (in terminal) node test.js  
+Note: JavaScript is not the same as node.js  
+Eg. require() is not a part of JavaScript standard and is not supported by browsers out of the box, it is the node.js module system.
 ### console.log():
 * used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user (output a message to the web console)
 * Parameters -- accept an array, an object or any message
