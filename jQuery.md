@@ -64,6 +64,8 @@ const video = {
     }
 }
 ```
+## require
+* require(['qviz'], function(qviz) {...}) -> load qviz, which can be used in the following function
 ## toggleClass
 * toggleClass() method toggles between adding and removing one or more class names from the selected elements
   * checks each element for the specified class names
