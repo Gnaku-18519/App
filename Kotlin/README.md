@@ -1,4 +1,4 @@
 # Kotlin & Android
 ## [Basics](https://github.com/AJ-Wuu/App/tree/main/Kotlin/KotlinNaiveAttempt)
-## [ToDoList](https://github.com/AJ-Wuu)
-## [ChattingApp](https://github.com/AJ-Wuu)
+## [ToDo List](https://github.com/AJ-Wuu)
+## [Chatting App](https://github.com/AJ-Wuu)
