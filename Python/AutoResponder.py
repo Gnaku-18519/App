@@ -1,3 +1,5 @@
+'''@author AJWuu'''
+
 import pyautogui
 import time
 import xlrd
