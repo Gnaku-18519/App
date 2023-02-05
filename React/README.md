@@ -92,3 +92,88 @@ export const IDCard: React.VFC<{
 };
 ```
 
+## Hooks (https://beta.reactjs.org/reference/react)
+### useState()
+* A state variable to retain the data between renders
+* The set function only updates the state variable for the next render (**calling the set function does not change the current state in the already executing code**)
+* Usage
+  * Adding state to a component: `const [name, setName] = useState('Taylor');`
+  * Updating state based on the previous state: `setAge(age + 1);` or `setAge(a => a + 1);`
+  * Updating objects and arrays in state
+    * In React, state is considered read-only, so you should replace it rather than mutate your existing objects
+    * Don't mutate an object in state like this: `form.firstName = 'Taylor';`
+    * Replace state with a new object: `setForm({ ...form, firstName: 'Taylor' });`
+  * Avoiding recreating the initial state: React saves the initial state once and ignores it on the next renders
+### useEffect()
+* Let you synchronize a component with an external system
+* Call at the top level of your component to declare an Effect (return `undefined`)
+* Usage: synchronize between React and outside
+```ts
+// Connect to an external system
+function ChatRoom({ roomId }) {
+  const [serverUrl, setServerUrl] = useState('https://localhost:1234');
+
+  useEffect(() => {
+  	const connection = createConnection(serverUrl, roomId);
+    connection.connect();
+  	return () => {
+      connection.disconnect();
+  	};
+  }, [serverUrl, roomId]);
+}
+
+// Wrapping Effects in custom Hooks
+function useChatRoom({ serverUrl, roomId }) {
+  useEffect(() => {
+    const options = {
+      serverUrl: serverUrl,
+      roomId: roomId
+    };
+    const connection = createConnection(options);
+    connection.connect();
+    return () => connection.disconnect();
+  }, [roomId, serverUrl]);
+}
+``` 
+### useContext()
+* Let you read and subscribe to context from your component
+* Call at the top level of your component to read and subscribe to context
+* Always looks for the closest provider above the component that calls it
+* It searches upwards and does not consider providers in the component from which you’re calling
+```ts
+function MyComponent() {
+  const theme = useContext(ThemeContext);
+}
+```
+### useCallback()
+* Let you cache a function definition between re-renders
+* Call at the top level of your component to **cache a function definition** between re-renders
+* **You should only rely on it as a performance optimization**
+* React will not throw away the cached function unless there is a specific reason to do that
+* By default, when a component re-renders, React re-renders all of its children recursively
+```ts
+function ProductPage({ productId, referrer, theme }) {
+  const handleSubmit = useCallback((orderDetails) => {
+    post('/product/' + productId + '/buy', {
+      referrer,
+      orderDetails,
+    });
+  }, [productId, referrer]);
+}
+```
+
+## Function vs Class
+| Aspect | Function | Class |
+|:-------|:---------|:------|
+| param | accept props as an argument | extend from React.Component |
+| return | return a React element(JSX) | create a render function which returns a React element |
+| state | stateless, simply accept data and display in some form | stateful, implement logic and state |
+| constructor | no | yes |
+| when to use | lighter, most of the time | heavier, preferred when require the state of the component |
+
+## Use Module for Scalibility
+* Group a set of related components, methods and assets together, providing a public interface to be used by other modules
+* A module is a series of components, whereas a component is a single part
+
+## 
+
