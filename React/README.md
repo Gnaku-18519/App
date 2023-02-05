@@ -175,5 +175,7 @@ function ProductPage({ productId, referrer, theme }) {
 * Group a set of related components, methods and assets together, providing a public interface to be used by other modules
 * A module is a series of components, whereas a component is a single part
 
-## 
-
+## Process
+* `async`: promise-based, try to resolve data as close as possible to where it will be used
+* `dynamic`: hold off loading some parts of a web page until a user needs them
+* `static`: preserve value even out of scope, can pass a static variable to the child component and it will act as a constant value
