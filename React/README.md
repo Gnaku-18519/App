@@ -77,5 +77,18 @@ const fontSizeLabel = useRecoilValue(fontSizeLabelState);
 ```
 
 ## Type React Components with Props
-The most consistent / reliable way to type the props object is to leverage React.VFC: `export const IDCard: React.VFC<your_type_here>`
+* The most consistent / reliable way to type the props object is to leverage React.VFC
+```ts
+export const IDCard: React.VFC<{
+  age: number;
+  name: string;
+  role: 'Software Engineer' | 'Data Engineer';
+}> = ({ name, role, age }) => {
+  return (
+    <div>
+      ...
+    </div>
+  );
+};
+```
 
