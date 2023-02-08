@@ -273,3 +273,59 @@ function App() {
   );
 }
 ```
+
+## API Interaction
+```ts
+componentDidMount() {
+    // POST request using fetch with error handling
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title: 'React POST Request Example' })
+    };
+    fetch('https://reqres.in/invalid-url', requestOptions)
+        .then(async response => {
+            const isJson = response.headers.get('content-type')?.includes('application/json');
+            const data = isJson && await response.json();
+
+            // check for error response
+            if (!response.ok) {
+                // get error message from body or default to response status
+                const error = (data && data.message) || response.status;
+                return Promise.reject(error);
+            }
+
+            this.setState({ postId: data.id })
+        })
+        .catch(error => {
+            this.setState({ errorMessage: error.toString() });
+            console.error('There was an error!', error);
+        })
+        .finally(() => {
+            console.log('POST finished');
+        });
+}
+```
+
+## Create Component
+```ts
+// Flip Card
+const Card = (props) => {
+    const [flip, setFlip] = useState(true);
+    
+    const handleOnClick = () => {
+        setFlip(!flip);
+    }
+    
+    return (
+      <div
+          onClick={() => handleOnClick()}
+          style={
+              backgroundColor: 'white',
+              width: '500px',
+              height: '500px'
+          }>
+          {flip ? props.prompt : props.answer}
+      </div>)
+};
+```
