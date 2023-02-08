@@ -51,3 +51,27 @@ let newValues = values.map((v, i) => {
     return [v*v, v*v*v, v+1]; // i is the "key", but not necessarily needed
 }); 
 ```
+
+## Sorting
+```ts
+var rawData = getData().sort((n1,n2) => {
+    if (n1.region > n2.region) {
+        return 1;
+    }
+    return -1;
+});
+```
+
+## Array
+```ts
+rawData = rawData.filter(function(param) { return param.model === currentModel });
+rawData.push("all");
+
+// getData() returns [{region: xxx, model: yyy, total: aaa, expected: bbb}, ...]
+var allRegions = getData().map((obj) => obj.region));
+```
+
+## Set
+```ts
+var uniqueRegions = new Set<string>(getData().map((obj) => obj.region));
+```
