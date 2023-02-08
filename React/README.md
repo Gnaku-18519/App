@@ -214,6 +214,16 @@ export function usePrevious<T>(value: T): T | undefined {
 }
 ```
 
+## Memo()
+* Skip rendering a component if its props have not changed
+* Improve performance
+```ts
+const B = memo(() => {
+  console.log('B')
+  return <C/>
+})
+```
+
 ## Function vs Class
 | Aspect | Function | Class |
 |:-------|:---------|:------|
