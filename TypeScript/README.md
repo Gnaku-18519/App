@@ -44,3 +44,10 @@ console.log(arr); // gives ["a","b","c","d"]
 var map1 = new Map().set(1,'a').set(2,'b').set(3,'c').set(4,'d');
 let map2 = new Map([...map1].filter(([k, v]) => k < 4)); 
 ```
+
+## map()
+```ts
+{targets.map((target, i) => (
+    // any function, can include return; i is the "key", but not necessarily needed
+))};
+```
