@@ -1,4 +1,5 @@
 # React
+## DOM = Document Object Model
 ## Use `npx tsc --noEmit` from the repo root directory (report all errors across the project)
 ## Use `npm run build` to mimic what our build server does (only report one error at a time)
 
@@ -159,6 +160,21 @@ function ProductPage({ productId, referrer, theme }) {
       orderDetails,
     });
   }, [productId, referrer]);
+}
+```
+### useRef()
+* Persist values between renders
+* Used to store a mutable value that does not cause a re-render when updated
+* Used to access a DOM element directly
+```ts
+export function useIsFirstRender(): boolean {
+  const isFirstRender = useRef(true);
+
+  if (isFirstRender.current) {
+    isFirstRender.current = false;
+    return true;
+  }
+  return false;
 }
 ```
 
