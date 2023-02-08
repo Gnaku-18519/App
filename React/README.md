@@ -241,3 +241,35 @@ const B = memo(() => {
 * `async`: promise-based, try to resolve data as close as possible to where it will be used
 * `dynamic`: hold off loading some parts of a web page until a user needs them
 * `static`: preserve value even out of scope, can pass a static variable to the child component and it will act as a constant value
+
+## Table
+```ts
+const data = [
+  { name: "A", age: 19, gender: "Male" },
+  { name: "B", age: 19, gender: "Female" },
+  { name: "C", age: 25, gender: "Male"},
+]
+
+function App() {
+  return (
+    <div className="App">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+        {data.map((val, key) => {
+          return (
+            <tr key={key}>
+              <td>{val.name}</td>
+              <td>{val.age}</td>
+              <td>{val.gender}</td>
+            </tr>
+          )
+        })}
+      </table>
+    </div>
+  );
+}
+```
