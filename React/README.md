@@ -329,3 +329,39 @@ const Card = (props) => {
       </div>)
 };
 ```
+
+## Dropdown List
+```ts
+const modelDropdown =(
+    <select onChange={e => setCurrentModel(e.target.value)}>
+        {models.map((item, i) => {
+            return (
+                <option value={item}>{item}</option>
+        )})}
+    </select>
+);
+```
+
+## Scale Column Display
+```ts
+metaData = {
+    columnsToDisplay:[
+        {
+            column: 'region',
+            sortOrder:2,
+        },
+        {
+            column: 'model',
+            sortOrder:1,
+        },
+        {
+            column: 'total',
+            sortOrder:3,
+        },
+        {
+            column: 'expected',
+            sortOrder:4,
+        },
+    ]
+}
+```
