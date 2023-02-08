@@ -169,6 +169,12 @@ function MyComponent() {
 * React will not throw away the cached function unless there is a specific reason to do that
 * By default, when a component re-renders, React re-renders all of its children recursively
 ```ts
+export function useToggle(on: boolean): [boolean, () => void] {
+  const [onOrOff, setOnOrOff] = useState(on);
+  const toggle = useCallback(() => setOnOrOff(prev => !prev), []);
+  return [onOrOff, toggle]
+}
+
 function ProductPage({ productId, referrer, theme }) {
   const handleSubmit = useCallback((orderDetails) => {
     post('/product/' + productId + '/buy', {
