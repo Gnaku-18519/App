@@ -48,6 +48,6 @@ let map2 = new Map([...map1].filter(([k, v]) => k < 4));
 ## map()
 ```ts
 let newValues = values.map((v, i) => {
-    return [v *v, v*v*v, v+1]; // i is the "key", but not necessarily needed
+    return [v*v, v*v*v, v+1]; // i is the "key", but not necessarily needed
 }); 
 ```
