@@ -110,6 +110,22 @@ export const IDCard: React.VFC<{
 * Call at the top level of your component to declare an Effect (return `undefined`)
 * Usage: synchronize between React and outside
 ```ts
+// Dependency
+// Pass nothing
+useEffect(() => {
+  // Runs on every render
+});
+
+// Pass an empty array
+useEffect(() => {
+  // Runs only on the first render
+}, []);
+
+// Pass props or state values
+useEffect(() => {
+  // Runs on the first render and any time any dependency value changes
+}, [prop, state]);
+
 // Connect to an external system
 function ChatRoom({ roomId }) {
   const [serverUrl, setServerUrl] = useState('https://localhost:1234');
@@ -175,6 +191,20 @@ export function useIsFirstRender(): boolean {
     return true;
   }
   return false;
+}
+
+export function usePrevious<T>(value: T): T | undefined {
+  /* The ref object is a generic container whose current property is mutable
+  and can hold any value, similar to an instance property on a class */
+  const ref = useRef();
+
+  // Store current value in ref
+  useEffect(() => {
+    ref.current = value;
+  }, [value]); // Only re-run if value changes
+
+  // Return previous value (happens before update in useEffect above)
+  return ref.current;
 }
 ```
 
